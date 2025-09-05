@@ -253,7 +253,7 @@ class AIWorker(QThread):
     def __init__(self, prompt):
         super().__init__()
         self.prompt = prompt
-        self.api_key = r"sk-RK3qriUmgO7PsPHfHS1mqrsoz3LZmdcmMiCzOMd6KzKhh93k"  
+        self.api_key = r"sk-"  
         self.base_url = r"https://api.moonshot.cn/v1/chat/completions"
 
     def run(self):
@@ -297,5 +297,6 @@ if __name__ == "__main__":
     pet = DesktopPet()
     pet.show()
     app.exec_() 
+
 
 
